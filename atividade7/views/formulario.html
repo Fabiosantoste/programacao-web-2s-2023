@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulário de Marcação de Consulta</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body>
+    <h1>Marcação de Consulta</h1>
+    <form action="/agendar-consulta" method="POST">
+
+        <h2>Dados Pessoais</h2>
+        <label for="nomeCompleto">Nome Completo:</label>
+        <input type="text" id="nomeCompleto" name="nomeCompleto" required><br>
+
+
+
+        <h2>Dados da Consulta</h2>
+        <label for="especialidade">Especialidade Médica:</label>
+        <select id="especialidade" name="especialidade" required>
+            <option value="">Selecione uma especialidade</option>
+            <option value="Cardiologia">Cardiologia</option>
+            <option value="Dermatologia">Dermatologia</option>
+           
+        </select><br>
+
+ 
+
+        <input type="submit" value="Agendar Consulta">
+    </form>
+</body>
+</html>
